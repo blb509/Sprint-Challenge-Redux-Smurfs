@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux";
 import { getSmurfs } from "../actions/index";
-import { SmurfList } from "./SmurfList"
+import { SmurfList } from "./SmurfList";
+import  AddSmurf  from "./AddSmurf";
 
 class App extends Component {
   constructor() {
@@ -21,6 +22,7 @@ class App extends Component {
     return (
       <div>
         <SmurfList smurfs={ this.props.smurfs } />
+        <AddSmurf />
       </div>
     );
   }
